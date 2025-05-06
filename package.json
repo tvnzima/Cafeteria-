@@ -1,0 +1,32 @@
+{
+  "name": "cafeteria-management-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js",
+    "dev": "nodemon index.js",
+    "start:frontend": "cd my-cafeteria-frontend && npm run start",
+    "start": "concurrently \"npm run dev\" \"npm run start:frontend\" && set PORT=5000 && react-scripts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "multer": "^1.4.5-lts.2",
+    "react-router-dom": "^7.5.3",
+    "tailwindcss": "^4.1.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
